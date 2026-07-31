@@ -199,6 +199,10 @@ ro.vendor.mtk_nn_baseline_support=1
 ro.vendor.mtk_nn_quant_preferred=1
 ro.vendor.mtk_nn_support=1
 
+# 4G/5G Carrier Aggregation
+persist.vendor.radio.lte_ca=1
+persist.vendor.radio.ca_endc_enabled=1
+
 # Radio
 persist.radio.multisim.config=dsds
 persist.vendor.factory.GB2312=no
