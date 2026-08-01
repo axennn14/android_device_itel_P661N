@@ -146,6 +146,9 @@ BOARD_VENDORIMAGE_EROFS_COMPRESS_HINTS := $(DEVICE_PATH)/configs/erofs_compress_
 # Platform
 TARGET_BOARD_PLATFORM := mt6833
 
+# USB Gadget - use device tree's own init rc instead of hardware/mediatek's default
+$(call soong_config_set,mediatek_gadget,use_custom_usb_gadget_rc,true)
+
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/props/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/props/vendor.prop
