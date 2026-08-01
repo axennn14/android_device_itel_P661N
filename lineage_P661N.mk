@@ -8,7 +8,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile.
 $(call inherit-product, device/itel/P661N/device.mk)
 # Inherit some common AviumUI stuff.
-$(call inherit-product, vendor/avium/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Device identifier. This must come after all inclusions
 PRODUCT_NAME := lineage_P661N
 PRODUCT_DEVICE := P661N
